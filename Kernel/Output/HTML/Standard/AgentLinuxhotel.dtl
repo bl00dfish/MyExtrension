@@ -1,0 +1,51 @@
+# OTRS Developer Training
+<h1>Hallo Linuxhotel</h1>
+
+$QData{"Key1"} 
+
+<hr>
+
+$QData{"Key2"}
+
+
+<hr>
+
+$QData{"Key3"}
+
+
+<hr>
+
+
+# $Text{"Help"}
+
+
+<hr> 
+
+<table border ="1">
+<!-- dtl:block:Row -->
+   <tr>
+<td><b>$Text{"$QData{"Key"}"}</b></td>
+     <td>$QData{"Value"}</td>
+   </tr>
+<!-- dtl:block:Row -->
+</table>
+
+<!-- start Notify -->
+<div class="MessageBox $Data{"BoxClass"}">
+    <p>
+<!-- dtl:block:LinkStart -->
+        <a href="$Data{"LinkStart"}" class="$QData{"LinkClass"}">
+<!-- dtl:block:LinkStart -->
+<!-- dtl:block:Text -->
+            $Text{"$Data{"Key"}"}
+<!-- dtl:block:Text -->
+<!-- dtl:block:Data -->
+            $Data{"Data"}
+<!-- dtl:block:Data -->
+<!-- dtl:block:LinkStop -->
+        </a>
+<!-- dtl:block:LinkStop -->
+    </p>
+    <a class="Close" title="$Text{"OTRS macht einfach nur Spaß!! ;-) "}" href="">$Text{"OTRS ist einfach genial!!"}</a>
+</div>
+<!-- end Notify -->
